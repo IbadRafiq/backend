@@ -14,9 +14,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0",  // Changed to always pass
-    "start": "node index.js",  // Changed from nodemon for production
-    "dev": "nodemon index.js",  // Added for local development
+    "test": "exit 0",  
+    "start": "node index.js",  
+    "dev": "nodemon index.js",  
     "build": "echo \"No build required for Node.js backend\""
   },
   "keywords": [],
