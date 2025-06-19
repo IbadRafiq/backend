@@ -14,6 +14,13 @@ const app = express();
 
 // Middlewares
 app.use(cors());
+const FRONTEND_URL = 'https://delightful-grass-0dd944900.6.azurestaticapps.net';
+
+app.use(cors({
+  origin: FRONTEND_URL,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'Uploads')));
 
