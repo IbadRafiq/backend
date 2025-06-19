@@ -14,7 +14,7 @@ const app = express();
 
 // Middlewares
 app.use(cors());
-const FRONTEND_URL = 'https://TaskManager.z13.web.core.windows.net';
+const FRONTEND_URL = 'https://delightful-grass-0dd944900.6.azurestaticapps.net';
 
 app.use(cors({
   origin: FRONTEND_URL,
